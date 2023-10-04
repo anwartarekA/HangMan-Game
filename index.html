@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hangman Game</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="info">
+            <div class="info_name">
+                name: <span>hangman</span>
+            </div>
+            <div class="info_category">
+                word from: <span></span>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="hangman_draw">
+                <div class="the_draw">
+                    <div class="corner"></div>
+                    <div class="hang"></div>
+                    <span class="header"></span>
+                    <div class="the_stand"></div>
+                    <div class="the_hang"></div>
+                    <div class="rope"></div>
+                    <div class="the_man">
+                        <div class="head"></div>
+                        <div class="body"></div>
+                        <div class="hands"></div>
+                        <div class="legs"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="letters"></div>
+        </div>
+        <hr>
+        <div class="letters_guess"></div>
+    </div>
+    <audio id="success" src="sounds/success-1-6297.mp3" preload="auto"></audio>
+    <audio id="fail" src="sounds/error-when-entering-the-game-menu-132111.mp3" preload="auto"></audio>
+    <audio id="good" src="sounds/success-fanfare-trumpets-6185.mp3" preload="auto"></audio>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"></script>
+    <div class="success"><span>continue!</span></div>
+    <div class="fail"><span>Game Over!</span></div>
+    <div class="start">
+        <span>start</span>
+    </div>
+    <div class="score">your score:<span></span></div>
+    <script src="main.js"></script>
+</body>
+
+</html>
